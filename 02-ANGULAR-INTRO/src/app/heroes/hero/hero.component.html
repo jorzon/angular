@@ -1,0 +1,45 @@
+<h1>
+    {{name}}
+</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd>{{name}}</dd>
+
+    <td>Edad:</td>
+    <dd>{{age}}</dd>
+
+    <td>Metodo:</td>
+    <dd>{{ getHeroesDescription() }}</dd>
+
+
+    <td>Capitalizado:</td>
+    <dd>{{capitalizedName}}</dd>
+</dl>
+
+<button *ngIf="name !== 'SpiderMan'" class="btn btn-primary" (click)="changeHero()">Cambiar nombre</button>
+
+<button *ngIf="age !== 99 " class="btn btn-primary  mx-2" (click)="changeAge()">Cambiar edad</button>
+
+<button *ngIf="age !== 29  || name !== 'ironman' "  class="btn btn-danger  mx-2" (click)="reset()">Resetear</button>
+
+<br><br><br>
+
+<h1>One way data binding:  vinculamos datos unicamente desde la clase del
+    componente a la parte visual. Lo conseguimos con la sixtasis "mustaches"
+</h1>
+
+<h1>Two way data binding:  vinculamos datos unicamente desde la clase del
+    componente a la vista como el one way binding pero tambien lo podemos hacer desde la parte visual hacia la clase 
+    del componente. Por ejemplo los formularios [ngModel]
+</h1>
+
+<b>binding: enlazar informacion</b>
+<br>
+<br>
+<p>Los metodos GETTER, forma de crearse una propiedades que realmente es un metodo pero se usa como una propiedad </p>
+
+<br>
+<p>dentro de las llaves se puede incluir cualquier expresion de JAVASCRIPT </p>
+<br>    
+<p>Dentro del *nfIf, con FALSE, destruye el boton, pero tambien podemos usar el  undefined, null, 0. Con TRUE mostramos</p>

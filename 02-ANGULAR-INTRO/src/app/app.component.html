@@ -1,0 +1,55 @@
+<div>
+  <h1>{{title}}</h1>
+  <h1>INTRO SOBRE ANGULAR</h1>
+  <p>trabaja sobre clases</p>
+  <ul>
+    <li>angular.json : es para hacer configuraciones</li>
+    <li>componentes: cuenta con 3 partes, html, css y un TS (pero se podria solo usar un TS, y el html y el css puede ser en linea)
+      nuestros componentes estan encapsulados
+    </li>
+    <li>servicios</li>
+    <li>modulos</li>
+    <li>
+      directivas principales: ngIf - ngFor <br/>
+      *ngIf: nos ayuda a ocultar (destruir, no existe) elementos HTML <br>
+      *ngFor: nos ayuda a duplicar elementos html
+    </li>
+    <li>archivos .spec: sirven para el testing </li>
+  </ul>
+
+  <h2>¿Que podemos hacer con angular?</h2>
+  <p>
+    Podemos desarrollar para un monton de plataformas: aplicaciones de windonw-mac (electron), aplicaciones mobile (ionic aplicaciones hibridas), ssr (angular universal)
+  </p>
+
+  <h2>¿Que es angular?</h2>
+  <P>Es un marco de trabajo estandarizado, viene con todo lo que necesitas para trabajar, es modular, tiene el soporte de GOOGLE </P>
+
+  <br>
+
+  <h2>BLOQUES FUNDAMENTALES DE ANGULAR</h2>
+  <ul>
+    <li>componentes: bloque de codigo HTML y CSS con su TS, se busca que sean bloques pequeños</li>
+    <li>rutas: mostrar diferentes componentes basados en la URL</li>
+    <li>directivas: existe 3 tipos:
+        <ul>
+          <li>directivas de componentes: ayuda a reutilizar codigo html con cierta funcionalidad </li>
+          <li>directivas estructurales: modifica el DOM</li>
+          <li>directivas de atributo: cambian el comportamiento o la apariencia de un elemento</li>
+        </ul>
+    </li>
+    <li>servicios: lugares para centralizar la informacion de tu aplicacion - singleton</li>
+    <li>modulos: permite encapsular nuestra información</li>
+  </ul>
+
+  <p>ESTRUCTURA PARA NUESTRO DIRECTORIO , BASADO EN MODULOS (CADA ENTE TIENE QUE VIVIR POR SI SOLO) </p>
+  <br>
+  <hr>
+ <app-counter /> 
+ <br>
+ <hr>
+ <app-heroes-hero />
+ <br>
+ <hr>
+ <app-heroes-list />
+</div>

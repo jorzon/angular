@@ -1,0 +1,35 @@
+<div>
+    <h1>Listado de heroes</h1>
+
+    <br><br>
+    <p>en este ejemplo veremos el *ngif, else y ngTemplate, el #nothingWasDeleted es una referencia local </p>
+
+    <button *ngIf="heroNames.length > 0" (click)="removeLastHero()" class="btn btn-outline-danger">Borrar último heroe</button>
+
+    <div *ngIf="deleteHeroe; else nothingWasDeleted">
+        <h3>
+            Heroe borrado
+            <span class="text-danger">{{deleteHeroe}}</span>
+        </h3>
+    </div>
+
+    <ng-template #nothingWasDeleted>
+        <h3>
+            No ha borrado nada
+        </h3>
+    </ng-template>
+
+    
+
+
+    <ul class="mt-2 list-group">
+        <li *ngFor="let name of heroNames" class="list-group-item">{{name}}</li>
+    </ul>
+</div>
+
+<div>
+    <h1>¿Que es un modulo?</h1>
+    <p>Es una simple clase con un decorador NgModule, el modulo es un agrupador, nos ayuda a encapsular una funcionalidad para poder compartirla,
+        es una buena practica ordenarlo alfabeticamente </p>
+</div>
+
