@@ -1,0 +1,15 @@
+<h1>DBZ Personajes</h1>
+
+<hr>
+
+<div class="row">
+    <div class="col-6">
+        <dbz-title [size]="character.length" title="Tus Personajes" />
+        <dbz-list [characterList]="character" />
+    </div>
+
+    <div class="col-6">
+        <dbz-title title="Ingresa Personaje" />
+        <dbz-add-character/>
+    </div>
+</div>
