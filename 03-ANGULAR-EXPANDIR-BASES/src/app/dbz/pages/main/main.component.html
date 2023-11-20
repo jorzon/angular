@@ -4,12 +4,12 @@
 
 <div class="row">
     <div class="col-6">
-        <dbz-title [size]="character.length" title="Tus Personajes" />
-        <dbz-list [characterList]="character" />
+        <dbz-title [size]="characters.length" title="Tus Personajes" />
+        <dbz-list (onDeleteCharacterId)="onDeleteCharacter($event)" [characterList]="characters" />
     </div>
 
     <div class="col-6">
         <dbz-title title="Ingresa Personaje" />
-        <dbz-add-character/>
+        <dbz-add-character    (onNewCharacter)="onNewCharacter($event)" />
     </div>
 </div>
