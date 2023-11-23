@@ -10,7 +10,6 @@
     "reset" : "del docs",
     "create" : "mkdir docs",
     "copy" : "Xcopy dist/03-angular-expandir-bases docs",
-
     "deploy": "npm run reset && npm run build:href &&  npm run create && npm run copy",
 
     "watch": "ng build --watch --configuration development",
