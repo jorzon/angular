@@ -1,0 +1,14 @@
+<h2 class="mt-4">Conceptos</h2>
+<p>Solo usamos unicamente un  <b>forRoot</b> en toda nuestra aplicación, para el resto se usa <b>forChild</b></p> <br>
+<p>Creamos un componente que viene con las rutas <b>router-outlet</b>, este se encarga de mostrar el contenido según la URL</p><br>
+<p>Cuando trabajamos de manera encapsulada, debemos importar <b>RouterModule</b> de  angular/router</p> <br>
+<p>Para activar el boton según la URL, debemos agregar la porpiedad <b>routerLinkActive</b> y la clase que qeremos ponerle</p> <br>
+<p>Cuando colocamos el path vacio, para evitar problemas al controlar las rutas activas agregamos  [routerLinkActiveOptions]="exact: true", para decirle que
+el path debe ser exactamente vacio. va entre llaves</p> <br>
+<p>Cada ruta puede tener un router interno</p><br>
+<p>LazyLoad, carga perezosa de modulos</p> <br>
+<p>El observable Hell, es cuando tenemos un observable dentro de otro observable</p> <br>
+<h1>Es importante desuscribirnse para ahorrar memoria</h1>
+<p>operadores de RXJS - metodo pipes , operadores:  los TAP(rxjs) dispara efectos secundarios</p> <br>
+<p>SwitchMap RXJS: recibe valor anterior, y regresa un nuevo observable - realiza un observable en basado en el observable anterior</p><br>  
+<p>map RXJS: nos sirve a transformar la información</p>
