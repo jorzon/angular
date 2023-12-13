@@ -1,0 +1,26 @@
+<h1>Pipes: modifica el valor de forma visual , pero no muta la referencia</h1>
+<h1>{{name}} </h1>
+<hr>
+<h1>{{name | uppercase}} : pasar a minuscula</h1>
+<h1>{{name | lowercase}} : pasar a mayuscula</h1>
+<h1>{{name | titlecase}} : las primeras en mayuscula y el resto en minuscula</h1>
+<h1>{{name | slice:0:3 | titlecase}}... : cortamos el nombre y le agregammos un <b>titlecase pipe</b></h1>
+
+<!-- <p-button label="PrimeNg"></p-button>
+
+<p-button label="Submit" icon="pi pi-whatsapp" iconPos="left"></p-button>
+
+<p-button label="Submit" icon="pi pi-bolt" iconPos="right"></p-button> -->
+
+
+<p-button label="PrimeNg"></p-button>
+
+<p-menu [model]="items"></p-menu>
+
+<button pButton pRipple label="Submit" class="p-button-success"></button>
+
+<h2>el DATEPIPE recibe argumentos</h2>
+
+<br>
+<h2>Si queremos usar nuestra aplicacion en un idioma idioma global, en nuestro app.module.ts, en la parte de providers hacemos la 
+    especificacion, a los que no mandamos el idioma, agarra el global. *** EL IDIOMA INGLES VIENE POR DEFECTO, NO NECESITAS IMPORTARLO DESDE EL COMMON/LOCALES/ *** </h2>
