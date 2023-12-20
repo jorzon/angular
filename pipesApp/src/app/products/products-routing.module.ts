@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { BasicPageComponent } from './pages/basic-page/basic-page.component';
 import { CommonPageComponent } from './pages/common-page/common-page.component';
 import { NumberPageComponent } from './pages/number-page/number-page.component';
+import { OrderComponent } from './pages/order/order.component';
+import { ConceptosComponent } from '../shared/pages/conceptos/conceptos.component';
 
 const routes: Routes = [
   {
@@ -17,6 +19,14 @@ const routes: Routes = [
   {
     path: 'uncommon',
     component: CommonPageComponent
+  },
+  {
+    path: 'custom',
+    component: OrderComponent
+  },
+  {
+    path: 'concept',
+    component: ConceptosComponent
   },
   {
     path: '**',
