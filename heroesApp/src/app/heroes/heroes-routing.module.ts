@@ -5,6 +5,7 @@ import { NewPageComponent } from './pages/new-page/new-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { HeroesPageComponent } from './pages/heroes-page/heroes-page.component';
+import { ConceptosComponent } from '../shared/pages/conceptos/conceptos.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,10 @@ const routes: Routes = [
       {
         path: 'new-hero',
         component: NewPageComponent
+      },
+      {
+        path: 'concept',
+        component: ConceptosComponent
       },
       {
         path: 'search',

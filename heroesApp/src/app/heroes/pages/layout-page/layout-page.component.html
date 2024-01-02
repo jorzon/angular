@@ -1,2 +1,34 @@
-<p>pagina layout pages </p>
-<router-outlet></router-outlet>
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav mode="push" [ngStyle]="{width: '250px'}">
+        <mat-toolbar color="primary">
+            <span>Menu</span>
+            <span class="spacer"></span>
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>closed</mat-icon>
+            </button>
+        </mat-toolbar>
+        <mat-nav-list>
+            <mat-list-item  *ngFor="let items of sidebarItem" [routerLink]="items.url" (click)="sidenav.toggle()">
+                <mat-icon matListItemIcon>{{items.icon}}</mat-icon>
+                {{items.label}}
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-toolbar color="primary">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span class="spacer"></span>
+
+        <button mat-button>
+            <span>Login</span>
+            <mat-icon>password</mat-icon>
+        </button>
+    </mat-toolbar>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</mat-sidenav-container>
+
