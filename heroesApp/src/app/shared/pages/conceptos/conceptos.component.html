@@ -1,4 +1,5 @@
-
+<div style="padding: 16px 16px;">
+    
 <p> <b>Sirve para instalar json-server solo para el ambiente desarrollo</b>  npm install --save-dev json-server</p>
 <br>
 <p>   Algunas personas crean sus variables de entorno en un archivo <b> .env</b> </p>
@@ -43,3 +44,39 @@
 <p>superhero: new FormControl  string  ('' , "llaves" nonNullable: true "llaves" ),   indica que siempre va ser null </p> <br>
 
 <p>usamos <b>as</b> para decirle que se comporte como nuestro objeto (interfaz)</p>
+
+<br>
+
+<p>Guard son protectores de rutas como un firewall, se pueden colocar en cualquier ruta padre o hija. es flexible, puede recibir boleean, promesas, etc. <br>
+EN LUGAR DE INYECTARLOS DE MANERA TRADICIONAL EN EL CONSTRUCTOR, LO COLOCAMOS EN OTRO LUGAR EN NUESTRO ROUTER. <br>
+ALGUNAS PERSONAS COLOCAN LOS GUARDS DENTRO DE LA CARPETA SERVICIOS <br>
+
+LOS GUARDA SON SERVICIOS Y DEBE TENER POR LO MENOS UNA INTERFAZ
+
+</p>
+
+<br>
+
+<p><b>RXJS MAP</b> me ayuda para transformar la data </p> <br>
+
+<p>Cuando queremos ver si una persona esta logueada
+    y mos trar cierta inforamción no es recomendable
+    hacerlo desde el app.component.ts por que puede ser que se llegue a mostrar algo
+    de informacion, por eso se recomienda usar los <b>GUARDS</b>
+</p>
+
+
+<br>
+<p>Los <b>GUARDS</b> son servicios, pero requiere por lo menos una interfaz. Debemos importar: <br>
+    <b>CanActivateFn:</b> activa la ruta en particular <br>
+    <b>CanMatchFn:</b> pueden entrar a la ruta si hacen cierto match <br>
+</p>
+
+<br>
+
+<p>
+
+    se importa el "inject" de angular/core para poder inyectar dependencias sin constructor de clase
+
+</p>
+</div>

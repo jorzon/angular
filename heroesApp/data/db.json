@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -108,24 +108,14 @@
       "characters": "Norrin Radd"
     },
     {
-      "id": "Iy-uel6",
-      "superhero": "hulk hogan",
-      "publisher": "DC Comics",
-      "alter_ego": "hunk loco",
-      "first_appearance": "wwe",
-      "characters": "loco",
-      "query": "",
-      "alt_img": "https://elcomercio.pe/resizer/tWXSp7voxs1kU7tjP9EW76tEaHw=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/TYBHNDGBQ5GYDPR73XKFADY7YM.jpg"
-    },
-    {
-      "id": "vDsK1Oo",
-      "superhero": "sandra",
+      "id": "OS1vwlG",
+      "superhero": "jorzon",
       "publisher": "DC Comics",
       "alter_ego": "delgado",
-      "first_appearance": "don tito",
-      "characters": "la gordita, chica fit",
+      "first_appearance": "TCS",
+      "characters": "jorzon",
       "query": "",
-      "alt_img": "https://pm1.narvii.com/6530/914859a6ff3e2bdb87426e89191916060eef0e05_hq.jpg"
+      "alt_img": "https://i.blogs.es/2afac3/postersmall/450_1000.jpg"
     }
   ]
 }
