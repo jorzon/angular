@@ -1,0 +1,18 @@
+<p>Para trabajar con formularios reactivos, primero tenemos que importarlos en nuestro MODULO <b>ReactiveFormsModule</b> </p>
+<br>
+<p>Cuando usamos formularios reactivos, en vez de usar el FormGroup, podemos usar el <b>FormBuilder, que nos ayuda a una sintaxsis mas amigable. Para 
+    esto tenemos que inyectar el servicio por el constructor
+</b> </p>
+
+<br>
+<p>
+    <b>[formGroup]="myForm"</b> de esta manera enlazamos nuestro formulario ts con nuestro HTML
+</p>
+
+<br>
+
+<p>PODEMOS MANDAR DATOS DESDE QUE CARGA LA VISTA CON EL RESET Y EL ONINIT</p>
+
+<br>
+
+<p>el <b>this.myForm.markAllAsTouched()</b> para cuando le des al boton submit te alerta de todo los campos faltantes</p>
