@@ -1,0 +1,58 @@
+<h2>Conceptos sobre los STANDALONE COMPONENTS</h2>
+
+<p>
+    los standalone son una caracteristica que entro en v14 modo beta y para la versión 15 a superiores ya se puede usar mas tranquila
+</p>
+
+<br>
+
+
+<p>
+    los standalone components no es diferente a los componentes corrientes, con la excepcion que en el decorador tiene la propiedad STANDALONE (true). Por defecto
+    los componentes tienen este parametro en false. Podemos importar todas las depencias que necesitemos. 
+</p>
+
+<br>
+
+<p>comando para crear un standalone component <b>ng g c standalone/alone/pages/alonePage --standalone</b></p>
+
+<br>
+
+<p>Cuando creamos una pagina como componente, podemos ovbiar el selector</p>
+
+
+<br>
+
+<p>El <b>CommonModule</b> es el que nos permite hacer el uso de directivas de angular,  como ngif , ngfor, etc. </p>
+
+<br>
+
+<p>El objetivo de estos componentes es que puedan sobrevivir por si mismos, sin necesidad que tengamos que definirlos </p>
+
+<br>
+
+<h1>Para usar un standalone component como una pagina podemos importarlo en nuestro ROUTING o podemos usar el  loadcomponent</h1>
+
+<br>
+
+<h1>Para usar nuestro componente standalone en una <b>pagina que es standalone</b>, en el ts. de la pagina tenemos que importarlo en los IMPORTS 
+de la parte superior </h1>
+
+<br><br>
+<counter-alone [number]="100"></counter-alone>
+
+<br>
+<br>
+
+
+<h1>
+    Para usar nuestro <b> standalone component</b> en una pagina o componente tradicional, Debemos <b>IMPORTARLO</b> en nuestro modulo que engloba esa sección. 
+</h1>
+
+
+<br>
+
+
+<h1><p>Podemos referenciar nuestro selectores como si fueran una etiqueta HTML y colocarles stilos, pero tenemos que agregar esos stilos con el selector , en 
+    el componente el cual llamamos al componente
+</p></h1>
