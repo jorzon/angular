@@ -1,0 +1,10 @@
+<ul class="list-group">
+    <li routerLinkActive="active" [routerLink]="item.router" *ngFor="let item of sides()" class="list-group-item">
+        {{item.title}}
+    </li>
+</ul>
+
+<hr>
+
+<p>{{name()}}</p>
+
